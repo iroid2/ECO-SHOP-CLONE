@@ -170,7 +170,10 @@ align-items: center;
 .cardEight{
     /* background-color: rgb(174, 19, 212); */
 }
-
+.ham-hidden-menu{
+    display: none;  
+    /* flex-direction: column; */
+}
 
 
 
@@ -298,6 +301,44 @@ align-items: center;
     .top-bottom-padding{
         padding: 2.3rem 1rem;
     }
+    a{
+        text-decoration: none;
+    }
+    .ham-hidden-menu{
+        width: 100%;
+        display: block;
+        background-color: white;
+        display: flex;
+        color: white;
+        text-align: center;
+        gap: 1rem;
+        flex-direction: column;
+        height: 200px;
+        position: absolute;
+        top: 7rem;
+        visibility: hidden;
+        z-index: 100;
+    }
+    .ham-hidden-menu a:hover{
+font-weight: bold;
+
+    }
+    .active{
+        visibility: visible;
+    }
+    .overally{
+        width: 100%;
+        height: 550vh;
+        background-color: blueviolet;
+        position: absolute;
+        top: 7rem;
+        opacity: .6;
+        visibility: hidden;
+    }
+    .activeOveral{
+        visibility: visible;
+    }
+    
   }
 
 
