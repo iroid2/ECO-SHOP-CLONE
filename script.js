@@ -5,5 +5,6 @@ const overally=document.querySelector(".overally")
 
 hamIcon.addEventListener(("click"),function(e){
    hiddenHam.classList.toggle("active")
+   overally.classList.toggle("activeOveral")
 })
 
