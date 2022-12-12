@@ -194,7 +194,6 @@ align-items: center;
     .navBar{
         padding: 1rem 2rem;
         flex-direction: column;   
-        position: fixed;
     }
     .hamMenuWrap{
         background-color: none;
@@ -307,10 +306,9 @@ align-items: center;
     }
     .ham-hidden-menu{
         width: 100%;
-        
+        display: block;
         background-color: white;
         display: flex;
-        line-height: 1.2rem;
         color: white;
         text-align: center;
         gap: 1rem;
@@ -318,16 +316,12 @@ align-items: center;
         height: 200px;
         position: absolute;
         top: 7rem;
-        
         visibility: hidden;
         z-index: 100;
-        
     }
     .ham-hidden-menu a:hover{
 font-weight: bold;
 border-bottom: 5px solid yellow;
-width: 90%;
-
 
     }
     .active{
