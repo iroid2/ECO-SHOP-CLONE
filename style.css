@@ -67,6 +67,9 @@ a{
 .arriv-image{
     width: 350px;
 }
+.arriv-image:hover{
+    width: 4px;
+}
 .heroSectn h2{
     font-size: 4rem;
 }
@@ -137,12 +140,31 @@ a{
 .arrival-cards{
     /* background-color: blueviolet; */
     border: .12px solid rgb(226, 225, 225);
-width: 25%;
-text-align: center;
+    width: 25%;
+    text-align: center;
     padding-bottom: 2rem;
+    position: relative;
 
 align-items: center;
 }
+.arrival-cards:hover{
+    /* width: 90%; */
+    /* background-color: yellow; */
+    cursor: pointer;
+}
+.card-overal{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: yellow;
+    position: absolute;
+    z-index: 4;
+    opacity: 0;
+}
+.card-overal:hover{
+    opacity: .7;
+}
+
 .cardOne{
     /* background-color: aqua; */
     grid-area: cardOne;
@@ -174,7 +196,42 @@ align-items: center;
     display: none;  
     /* flex-direction: column; */
 }
-
+.none{
+    display: none;
+}
+.search svg{
+    align-items: center;
+    color: white;
+}
+.search svg:hover{
+    color: black;
+}
+.search{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(102, 102, 102);
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+display: flex;
+border-radius: 50%;
+position: absolute;
+top: 34%;
+right: 40%;
+}
+.search:hover{
+    background-color: white;
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+}
+.search .itm-price{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold
+    
+    
+}
 
 
 
@@ -232,6 +289,11 @@ align-items: center;
     }
     .arrival-cards{
         width: 90%;
+        /* background-color: red; */
+    }
+    .arrival-cards:hover{
+        width: 90%;
+        /* background-color: yellow; */
     }
     .arriv-image{
         width: 80%;
